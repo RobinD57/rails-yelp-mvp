@@ -9,6 +9,6 @@
   Restaurant.create(
     name: Faker::Restaurant.name,
     address: Faker::Address.full_address,
-    category: CATEGORIES.sample
+    category: %w(chinese italian japanese french belgian).sample
   )
 end
